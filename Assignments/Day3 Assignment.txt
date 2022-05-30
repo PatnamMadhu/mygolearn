@@ -1,0 +1,33 @@
+DAY 3 ASSIGNMENT :
+
+1.	What is meant by Ellipsis and Variadic functions?
+
+	The function that called with the varying number of arguments is known as variadic function. 
+	Or in other words, a user is allowed to pass zero or more arguments in the variadic function. 
+	fmt.Printf is the example of the variadic function, it required one fixed argument at the starting
+	after that it can accept any number of arguments. In the declaration of the variadic function, 
+	the type of the last parameter is preceded by an ellipsis, i.e, (…). 
+	It indicates that the function can be called at any number of parameters of this type.
+	
+3.	Concurrency vs Parallelism 
+
+	Concurrency: Concurrency is about dealing with lots of things at once. This means that we manage to get multiple things
+	done at once in a given period of time. However, we will only be doing a single thing at a time. 
+	This tends to happen in programs where one task is waiting and the program decides to run another task in the idle time.
+	Parallelism: Parallelism is about doing lots of things at once. This means that even if we have two tasks, 
+	they are continuously working without any breaks in between them. 
+	
+4.	ORM [Object Relational Mapping] :: ORM Library 
+	Object-Relational Mapping (ORM) is a technique that lets you query and manipulate data from a database using an object-oriented paradigm.
+	When talking about ORM, most people are referring to a library that implements the Object-Relational Mapping technique,
+	hence the phrase "an ORM". An ORM library is a completely ordinary library written in your language of choice that encapsulates the code
+	needed to manipulate the data, so you don't use SQL anymore; you interact directly with an object in the same language We're using.
+5.	REST & API's : Main concepts & End Points
+	REST stands for Representational State Transfer.Any API (Application Programming Interface) that follows the REST design principle is said to be
+	RESTful. API stands for Application Programming Interface. It is a way for your application to interact with other applications via an endpoint. 
+	Conversely, you can build out an API for your application that is available for other developers to utilize/connect to via HTTP methods,
+	which are RESTful. Representational State Transfer (REST):
+		GET: Retrieve data from an API endpoint.
+		PUT: Update data via an API - similar to POST but more about updating info.
+		POST: Send data to an API.
+		DELETE: Remove data from given API.

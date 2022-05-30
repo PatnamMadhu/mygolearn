@@ -1,0 +1,176 @@
+ day5:
+ 
+ Assignments from Day 1 - Day 3: Github account :: Email Dibya your Github repo link
+
+https://github.com/golang/example
+
+https://github.com/SimonWaldherr/golang-benchmarks
+
+Clean code + efficient code : Benchmarks 
+Clean code + efficient code [code that is performance friendly : hyper scaling/scaling-in/out] : Benchmarks standards
+
+Code Ship : Code ready to be shipped : 3 aspects of the code :
+
+a. Development code is ready 
+b. Test code is ready and available & also checked against the development code [CI process]
+c. Tech documentation for the code/business use case
+
+
+++++++++++++++
+Assignment
+
+package main
+
+func main() {
+	for {
+	}
+}
+
+
+introduce time out in this 5 seconds
+
+
+2.
+
+Can there be a use case : How Pointers in Go can assist in API's
+
+++++++++++++++
+
+Declartion of functions
+
+func function_name(parameter_name1 type, parameter_name2 type,..)
+return_type {
+
+//statement
+
+}
+
+/* Parameters/Return types :: Optional */
+
+++++++++++++++
+
+keep this below error type handy
+
+"non-declaration statement" outside function body
+
+++++++++++++++
+
+defer keyword: expression in defer must be function call/method call
+
+Common use cases :: to use Defer : 
+
+a. Assets connections being closed [files/connections/scope of variables]
+b. Clean-up activties
+c. loop in my program --> behavior/execution strategy for unknown situations :: high hits :: catching the panics 
+d. Multiple processes :: Concurrency --> GoRoutines/Channels :: multiple processes :: close the processes (if the scope is over)
+
+++++++++++++++
+
+Pointers
+
+Derefencing (pointers) :: Trying to access or change the data that is present in the memory location :: doing by using a pointer
+
+Dereferencing :: Multiple memory lookups
+
+Pointers :: better memory footprint :: round trips for memory lookup, dereferencing is faster :: doesn't checks the variable but the pointer --> memory location
+
+Go : Pointers :
+
+a. Store the memory address of another variable
+b. Pointers are also referred as special variables
+c. Pointer variables --> store the data at a specific memory address :: better memory management perspective 
+d. Pointers : *
+e. Go --> There is NO support for Pointer Arithmetic
+
+Mutate a variable --> passing to a function [passing-by-value] :: changes that are made --> work with that copy : Pointers
+
+++++++++++++++++++++=
+struct in go
+
+type struct_name struct {
+
+variable_name1 variable_type1
+variable_name2 variable_type2
+
+}
+
+type student struct {
+
+name string
+age int
+address string
+
+}
+
+struct :
+
+a. Create a struct employee : properties : name (string), age(int), address(string)
+b. func : hold the employee type + print the emp_name property
+
+c. main() --> declare the variables :: emp name, address, age 
+
+inside :: variable :: hold the employee data 
+
+struct emp 
+
+var emp1 emp
+
+d. Define the data for 3 set of employee : e1..e3
+
+e. display a specific emp data
+
+
+ans :
+
+
+package main
+
+import "fmt"
+
+type emp struct{
+
+name string
+address string
+age int
+
+}
+
+func display_emp(e emp){
+fmt.Println(e.name)
+}
+
+func main(){
+
+var empdetail1 emp
+
+empdetail1.name="Dibya"
+empdetail1.address="Bng"
+empdetail1.age=100
+
+empdetail2 := emp{"Sumit", "Delhi", 200}
+
+display_emp(empdetail1)
+display_emp(empdetail2)
+
+}
+
+-----> In a a struct, is it possible to have non-mandatory variables or null variables
++++++++++++++++++++++++++++++++
+
+Custom Packages in Go
+
+--> Create a package : How 
+--> Package would be made available : 
+--> How to use the package
+
++++++++++++++++++++++++++++++++
+
+Goroot - where the Go SDK resides; need not be touched
+Gopath - defines where the current workspace is
+
+go env GOPATH/GOROOT //command to check the path 
+
+
+https://itnext.io/golang-and-clean-architecture-19ae9aae5683
+
+

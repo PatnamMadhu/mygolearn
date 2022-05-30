@@ -1,0 +1,27 @@
+DAY 1 ASSIGNMENT :
+
+1. Finish Go installation
+
+   Go is installed in my device(go version go1.18.2 windows/amd64)
+
+2. compiled v/s interpreted languages
+    A compiled language is converted into machine code so that the processor can execute it.Where as in Interpreted language
+	the implementations execute instructions directly without earlier compiling a program into machine language.
+	The compiled programs run faster than interpreted programs.
+3. Static language vs dynamic language
+    In statically typed programming languages, type checking occurs at compile time. At compile time, source code in a specific programming language
+	is converted to a machine-readable format. This means that before source code is compiled, the type associated with each and every single 
+	variable must be known. Some common examples of programming languages that belong to this category are Java, C, C++, C# and Go.
+	
+	In dynamically typed languages, type checking takes place at runtime or execution time. This means that variables are checked against 
+	types only when the program is executing. Some examples of programming languages that belong to this category are Python, JavaScript.
+
+4.	Creation of free github.com account
+	Done.
+5.	installation of git client in local machine
+	Installed Git in Local machine.
+	
+	
+	
+
+

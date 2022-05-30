@@ -1,0 +1,21 @@
+DAY 2 ASSIGNMENT :
+
+1.	Pub-Sub Model : API's + MSA
+	Pub/sub is shorthand for publish/subscribe messaging, an asynchronous communication method in which messages are exchanged
+	between applications without knowing the identity of the sender or recipient.
+	Four core concepts make up the pub/sub model:
+		i. Topic – An intermediary channel that maintains a list of subscribers to relay messages to that are received from publishers
+	   ii. Message – Serialized messages sent to a topic by a publisher which has no knowledge of the subscribers
+	  iii. Publisher – The application that publishes a message to a topic
+	   iv. Subscriber – An application that registers itself with the desired topic in order to receive the appropriate messages
+	   
+2.	Error vs Exception
+
+	The term exception is shorthand for the phrase exception event. It is an event that occurs during the execution of the program and
+	interrupts the normal flow of program instructions. These are the errors that occur at compile time and run time.
+	It occurs in the code written by the developers. It can be recovered by using the try-catch block and throws keyword. 
+	
+	Errors are problems that mainly occur due to the lack of system resources. It cannot be caught or handled.
+	It indicates a serious problem. It occurs at run time. An example of errors is OutOfMemoryError, LinkageError, AssertionError, etc. 
+
+

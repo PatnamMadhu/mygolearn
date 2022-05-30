@@ -1,0 +1,163 @@
+https://github.com/golang/go
+https://go.dev/doc/install/source
+https://go.dev/
+https://go.dev/doc/
+https://pkg.go.dev/
+
+go help --> display the list of commands & doc topics
+
+go help <command> --> displays the details about the specific command/topics
+
+
+QQQQQQQQQQQQQQQQQ'
+
+- Can we multiple modules defined in the same go.mod file? If yes - how [syntax]; if No - how to define multiple modules
+
+- How to modify/reload with changes for a go.mod file using the cmd
+API-first Design
+Go internal design principle :: API-first design
+
+
+checksum algorithm :: Go - go.sum file - working on an authentication modules
+SQL Injections/Dirty Injections/Cross-site scripts
+Internal module :: Authenticating module :: part of Go SDK
+
+Authenticating module :: part of Go SDK :: sum.go file :: Checksum algorithm
+go mod tidy : new dependencies/package calls needed based on the changes in my directory, it will fetch the updates & publish the updates in go.mod file
+
+https://goplay.tools/
+Its Called playgrounds
+https://go.dev/play/
+
+--> Data Types in Go : 3 basic types used in Go :
+
+a. Numeric Type :
+
+int8/16/32/64
+
+uint8/16/32/64
+
+float32/64
+
+complex64/128
+
+b. String Type - All the different operations :: Concatenation/extracting
+c. Boolean Type - True or False
+
++++++++++++++++
+variebles1.go
+
+package main
+
+import "fmt"
+
+func main() {
+
+var x int
+x=3
+fmt.Println("x:", x)
+
+var y int = 15
+fmt.Println("y:", y)
+ 
+var z=30
+fmt.Println("z:", z)
+
+var i, k = 200, "Hello"
+fmt.Println("i & k are", i, k)
+
+}
+++++++++++++++++
+
+Divide the use cases into a proper size for better MSA implementation : Sizing of the use case
+
+Rock (Monolithic) --> MSA (pebbles) --> Grains [over engineering --> maintenance]
+
+1. Divide the use cases into a proper size for better MSA implementation : Sizing of the use case
+
+Rock (Monolithic) --> MSA (pebbles) --> Grains [over engineering --> maintenance]
+
+Login service : 
+
+a. S1 v1/v1.1 : User & Passwd
+b. S2 : Hash algorithm 
+c. S3: Forgot passwd
+
+2. API Gateway [request from interfaces --> back-end + request --> transformed; rate limiting [concurrency]
+
+3. Service Discovery :: Service Registry
+
+Netflix : Monolithic --> Microservices Architecture :: Toolchains --> Open Source
+
+Netflix : 4500-5000 services 
+
+4. Health Check Tools 
+
+5. Design Patterns that we use in MSA architecture
+
+https://www.agiratech.com/golang-use-cases
+
+
+Go :: There is NOT much support available for implicit type conversions.
+
+Slice --> Segment or portion of an array
+Each element of the slice can be accessed using the Slice Name & Index Number
+Length of the array cannot be modified BUT size of the slice can be changed
+var slice_name [<size>] type = <array_name>[start:end]4
+
+"..." called as : Ellipsis
+"..." (Ellipsis) :: Used with Variadic functions
+
+
+When do we use Variadic Functions :: Function calls thar are made with varying numner of arguments
+
+Better and smarter memory management
+
+
+1. Utility of ...
+2. Utility of Variadic functions
+
+When do we use Variadic Functions :: Function calls thar are made with varying numner of arguments
+
+args :: 0 to any of the numbers: args size that is defined
+
+Memory elasticity / squeezing and expanding memory management :: Compiler/GoRoutines/GC - Mem Allocs/Dealloc
+
+array : with or without size 
+defining the slice : no size defined [size : dynamic] :: referencing the array [range]
+appending the slice :: any variable to hold the slice value
+
+++++++++++++++++++++++++++
+Math Package
+
+https://pkg.go.dev/
+https://pkg.go.dev/ma
+https://pkg.go.dev/ma
+
+______________________________________
+package main 
+
+import (
+
+	"fmt"
+	"math/rand"
+	
+)
+
+//using pseudorandomizers
+
+func main(){
+
+fmt.Println("My random number 1 is", rand.Intn(10))
+
+}
+
+______________________
+--> Concurrency vs Parallelism
+--> Installing Go from Source? 
+--> ORM [Object Relational Mapping] :: ORM Library
+--> REST & API's : Main concepts
+
+
+
+
